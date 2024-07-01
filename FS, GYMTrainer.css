@@ -1,0 +1,253 @@
+
+#preloader{
+  background: url(Loading.gif) no-repeat center ;
+  background-size: 400px;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+}
+
+
+
+
+
+
+
+/* navigation bar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 59, 59);
+  }
+  
+  video{
+    margin-top: -2em;
+    
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 3em;
+    z-index: 99;
+    width: 80%;
+    margin: 10px auto;
+    
+    
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+  
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    
+  
+    &:hover{
+      color: #ff4b2b;
+    }
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+   
+  
+  @media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: #333;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+  
+    .nav-links li {
+        margin: 20px 0;
+    }
+  
+    .nav-toggle {
+        display: flex;
+    }
+  
+    .nav-links.active {
+        transform: translateX(0);
+    }
+  }
+  
+  
+  /* Section work */
+  
+  /* Welcome Section */
+  .welcome {
+    background-color: #434343;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+  
+/* cards work   */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+.card {
+    background-color: #363636;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 250px;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card h3{
+  color: white;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+.card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+.card-text {
+    font-size: 1em;
+    color: #666;
+}
+
+/* start table */
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 10px auto;
+    position: relative;
+    top: 8em;
+    
+  
+  }
+  table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+  }
+  th, td {
+    padding: 10px;
+    
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td{
+    color: white;
+  }
+
+  /* footer start */
+
+  /* alone h1 */
+h1{
+  margin-top: 4em;
+  font-size: 75px;
+  text-align: center;
+  background-image: url(FSgym.jfif);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+}
+/* start footer */
+
+.footer {
+  margin-top: 15em;
+  background: url(FSgym.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border-top: 6px solid white;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .social-icons {
+  margin: 20px 0;
+}
+.footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer .social-icons a:hover {
+  color: #f0c040;
+}
+.footer p {
+  margin: 5px 0;
+}
+.footer .contact-info {
+  margin: 10px 0;
+}
+  
+.back{
+  margin: 10px auto;
+  width: 30%;
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.47);
+}
